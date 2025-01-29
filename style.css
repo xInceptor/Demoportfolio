@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    background: #333;
+}
+
+.nav-left {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.nav-left a:hover {
+    background: #ff5733;
+    border-radius: 5px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.project-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden; /* Prevent text overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: normal; /* Allow text wrapping */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Social Media Section */
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-card {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.social-card:hover {
+    transform: scale(1.1);
+}
+
+.social-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+/* Education, Experience, and Achievements Sections */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Horizontal Scrolling for Education, Experience, and Achievements */
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+/* Experience and Achievements Container */
+.experience-container,
+.achievements-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer:hover {
+    background: #333;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
